@@ -1,13 +1,1 @@
-{
-  "schema": 1,
-  "packs": [
-    {
-      "id": "fade-lift",
-      "name": "Fade Lift",
-      "tier": "free",
-      "url": "https://raw.githubusercontent.com/djdarpan/antikythera-motion-library/main/packs/fade-lift.json",
-      "signatureUrl": "https://raw.githubusercontent.com/djdarpan/antikythera-motion-library/main/signatures/fade-lift.sig",
-      "minimumEngine": "1.0.0"
-    }
-  ]
-}
+
