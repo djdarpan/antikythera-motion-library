@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "fade-lift",
+  "name": "Fade Lift",
+  "version": "1.0.0",
+  "tier": "free",
+  "category": "Entrance",
+  "minimumEngine": "1.0.0",
+  "requiredCapabilities": ["driver:time-progress", "output:opacity", "output:translate-y"],
+  "picks": [
+    { "key": "element", "label": "Element", "instruction": "Pick the layer that should gently, continuously breathe between a slightly lifted/dimmer state and its own natural resting state." }
+  ],
+  "graph": {
+    "drivers": [
+      { "id": "driver-1", "type": "time-progress", "nodeId": null }
+    ],
+    "nodes": [
+      {
+        "nodeId": "$PICK:element",
+        "outputs": [
+          {
+            "id": "output-opacity",
+            "type": "opacity",
+            "category": "appearance",
+            "sourceDriverId": "driver-1",
+            "ratio": 1,
+            "easing": "ease-out",
+            "rangeMin": 0.6,
+            "rangeMax": 1,
+            "clamp": true
+          },
+          {
+            "id": "output-translatey",
+            "type": "translate-y",
+            "category": "transform",
+            "sourceDriverId": "driver-1",
+            "ratio": 1,
+            "easing": "ease-out",
+            "rangeMin": 8,
+            "rangeMax": 0,
+            "clamp": true
+          }
+        ]
+      }
+    ]
+  }
+}
