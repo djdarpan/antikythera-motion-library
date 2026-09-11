@@ -7,6 +7,7 @@
   "category": "Entrance",
   "minimumEngine": "1.0.0",
   "requiredCapabilities": ["driver:time-progress", "output:opacity", "output:translate-y"],
+  "previewUrl": "https://raw.githubusercontent.com/djdarpan/antikythera-motion-library/main/previews/fade-lift.svg",
   "picks": [
     { "key": "element", "label": "Element", "instruction": "Pick the layer that should gently, continuously breathe between a slightly lifted/dimmer state and its own natural resting state." }
   ],
